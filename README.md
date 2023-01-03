@@ -1,6 +1,6 @@
-# Jobsheet-1-Embedded-System
+# Jobsheet-1
 
-### DASAR PEMROGRAMAN ESP32 UNTUK PEMROSESAN DATA INPUT/OUTPUT ANALOG DAN DIGITAL
+### 3InputOutput
 
 ##### I. Teori Dasar
  
