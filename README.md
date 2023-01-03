@@ -1,120 +1,80 @@
-# Job-1-Embedded
-Jobsheet 1 DASAR PEMROGRAMAN ESP32 UNTUK  PEMROSESAN DATA INPUT/OUTPUT ANALOG  DAN DIGITAL
+# Jobsheet-1-Embedded-System
 
-**Percobaan a. GPIO**
+### DASAR PEMROGRAMAN ESP32 UNTUK PEMROSESAN DATA INPUT/OUTPUT ANALOG DAN DIGITAL
 
-Percobaan GPIO memiliki bentuk rangkaian sebagai berikut,
+##### I. Teori Dasar
+ 
 
-<img width="329" alt="gambar rangkaian GPIO" src="https://user-images.githubusercontent.com/121158751/208877546-5725864b-c010-41bd-97c4-62e95759138d.png">
+ESP-32 adalah mikrokontroler yang dikenalkan oleh Espressif System merupakan penerus dari mikrokontroler ESP8266. Pada mikrokontroler ini sudah tersedia modul WiFi     dalam chip sehingga sangat mendukung untuk membuat sistem aplikasi Internet of Things. Perbedaan antara ESP32 dengan ESP8266 adalah pada bagian prosesornya. ESP32 sudah  Dual-Core 32 bit, jelas lebih cepat ESP32 secara kinerja. Selain itu modul ini juga mempunyai bluetooth, satu fitur yang tidak ada di ESP8266.
 
+##### II. Alat dan Bahan yang Digunakan
+1) ESP32
+2) Breadboard
+3) Kabel jumper
+4) Potensiometer 10k Ohm (1)
+5) Sensor Capacitive Soil Moisture
+6) LED (5) dan Push Button (3)
+7) Multimeter
+8) Resistor 330,1K, 10K Ohm (@ 3)
 
+##### III. Percobaan
+A. Instalasi Board ESP32 pada Arduino IDE
+   1. Buka Arduino IDE
+   2. Kemudian klik Menu File > Preferences
+   3. Pada kolom Additional ... yang ada dibawah, tambahkan link berikut https://dl.espressif.com/dl/package_esp32_index.json
+   4. Klik menu Tools > Board: > Pilih Boards Manager ...
+   5. Pada kolom pencarian tulis ESP32 kemudian install dan tunggu sampai selesai.
 
+B. Mengakses GPIO dan PWM ESP32
+a) GPIO
+1. Buatlah rangkaian seperti pada Gambar di bawah ini.
 
+![Capture](https://user-images.githubusercontent.com/118172386/210171226-b675b914-9494-4b29-8bde-1a4eab5dae88.JPG)
 
-https://user-images.githubusercontent.com/121158751/208877735-8656dfd2-5a82-43e7-9789-0294338c5842.mp4
+2. Buka program example blink, kemudian modifikasi dan buat agar LED dapat melakukan blink dengan interval 100ms, 1 detik, 2 detik dan 3 detik sekali. Setelah itu, buatlah program agar LED dapat blink 1 detik sekali menggunakan timer milis(). Dokumentasikan hasilnya.
+3. Buatlah program seperti pada script GPIO1.ino untuk mengendalikan led menggunakan push button. Kemudian upload program tersebut pada ESP32 dan dokumentasikan hasilnya.
 
+https://user-images.githubusercontent.com/118172386/210171784-6ddea236-f50f-4674-bf9f-d0429c2e9351.mp4
 
-Ada 3 percobaan untuk GPIO yaitu menambah 1 LED dan 1 push button pada rangkaian, kemudian kembangkan 
-program agar ketika push button ke-2 ditekan, LED akan melakukan blink 
-setiap 500 ms sekali
+4. Tambahkan 1 LED dan 1 push button pada rangkaian, kemudian kembangkan program agar ketika push button ke-2 ditekan, LED akan melakukan blink setiap 500 ms sekali. Kemudian dokumentasikan hasilnya.
 
-Kemudian, Tambahkan 3 LED dan 1 push button pada rangkaian, kemudian kembangkan 
-program agar ketuka push button ke-3 ditekan, LED akan menyala menjadi 
-running led (menyala bergantian dari kiri ke kanan). 
+https://user-images.githubusercontent.com/118172386/210172246-ca2301a3-39a1-4bc1-a2c7-60396f990e8c.mp4
 
-HASIL PERCOBAAN
+5. Tambahkan 3 LED dan 1 push button pada rangkaian, kemudian kembangkan program agar ketuka push button ke-3 ditekan, LED akan menyala menjadi running led (menyala bergantian dari kiri ke kanan). Setelah itu dokumentasikan hasilnya.
 
-Percobaan 1
+https://user-images.githubusercontent.com/118172386/210172259-cad10e4b-bb9e-40e2-8eff-e0dacccc24dd.mp4
 
+b) PWM
 
+1. Buatlah rangkaian seperti pada gambar di bawah ini.
 
-https://user-images.githubusercontent.com/121158751/208878033-b95ad15a-1e5a-48fc-bf51-ee0259e1d732.mp4
+![Capture](https://user-images.githubusercontent.com/118172386/210172286-de54c8f4-7a38-4fc0-a6a6-682a34644060.JPG)
 
+2. Buatlah script program seperti berikut.
+3. Upload program tersebut, kemudian amati dan analisis apa yang terjadi serta dokumentasikan hasilnya
 
+https://user-images.githubusercontent.com/118172386/210172327-d4263dbf-5d91-453e-8382-f7f40eb24e50.mp4
 
-Dapat dilihat hasil dari percobaan di atas yaitu lampu LED pertama dapat menyala dengan blink 1 detik sekali
+4. Buatlah program lanjutan seperti pada script berikut ini.
+5. Upload program tersebut, kemudian amati dan analisis apa yang terjadi serta dokumentasikan hasilnya.
 
-Percobaan 2
+https://user-images.githubusercontent.com/118172386/210172352-3ef1fd2f-fc34-4bcb-b895-902764eb0b27.mp4
 
+C. ADC dan DAC
+1. Buatlah rangkaian seperti pada gambar di bawah ini.
 
+![Capture1](https://user-images.githubusercontent.com/118172386/210172373-b737083a-5ebb-402a-878a-245a3b3dfc52.JPG)
 
-https://user-images.githubusercontent.com/121158751/208878083-fc5f3bb1-4591-41b3-bd0a-8232a4a44c68.mp4
+2. Buatlah program seperti pada script berikut ini
+3. Putar potensiometer secara perlahan agar mendapatkan nilai 0 hingga 4095 pada tampilan serial monitor. Analisis apa yang terjadi dan dokumentasikan hasilnya.
 
 
+https://user-images.githubusercontent.com/118172386/210172404-85a9d5fd-c17c-4f91-8297-3c26153d8067.mp4
 
-Pada percobaan di atas, hasilnya yaitu lampu led dapat menyala dengan blink 500ms sekali
+4. Buatlah program seperti pada script berikut ini.Tambahkan LED pada GPIO5.
+5. Upload program, kemudian putar potensiometer dari nilai terendah hingga nilai tertinggi. Amati yang terjadi, analisis dan dokumentasikan hasilnya.
 
-Percobaan 3 
 
+https://user-images.githubusercontent.com/118172386/210172437-70ff65f5-ca19-4424-a879-51388817cd34.mp4
 
 
-https://user-images.githubusercontent.com/121158751/208878137-85760179-4679-49cc-bb3a-3ff0b573f7b3.mp4
-
-
-
-Pada percobaan di atas hasilnya yaitu ketiga lampu LED menyala secara berurutan (running) dari kiri ke kanan
-
-
-**Percobaan b.PWM**
-
-Percobaan PWM memiliki rangkaian sebagai berikut,
-
-
-<img width="368" alt="RAngkaian PWM" src="https://user-images.githubusercontent.com/121158751/208878195-72d003c8-b8e5-413f-af7b-db0d80b11633.png">
-
-
-
-Percobaan 1 
-
-Pada percobaan PWM terdapat 3 LED, dan percobaan pertama dapat dilihat hasil dari percobaan ini adalah hanya 
-1 LED yang menyala dari ketiga LED 
-
-
-
-https://user-images.githubusercontent.com/121158751/208878243-d4b450f2-8d0b-4578-80ef-d076c2474eef.mp4
-
-
-
-Percobaan 2
-
-Pada percobaan kedua PWM terdapat 3 LED dan hasil dari percobaan kedua adalah ketiga lampu tersebut
-menyala secara bersamaan dan looping.
-
-
-
-
-https://user-images.githubusercontent.com/121158751/208878282-b57e0700-f640-4761-8a8f-219236645314.mp4
-
-
-
-
-**Percobaan c. ADC dan DAC**
-
-Percobaan ADC dan DAC memiliki rangkaian sebagai berikut,
-
-
-<img width="416" alt="Rangkaian ADC DAC" src="https://user-images.githubusercontent.com/121158751/208878367-05df5a59-9b79-4be6-a5e2-5ae79f7ad04a.png">
-
-
-Percobaan Pertama
-
-
-
-https://user-images.githubusercontent.com/121158751/208878430-7858176e-429c-449a-baa2-77a5f3f1cf3a.mp4
-
-
-
-Pada percobaan di atas rangkaian tidak menggunakan lampu LED dan hanya menggunakan potensio, hasil dari percobaan di atas adalah
-apabila kita memutar potensio ke kanan maka resistansi potensio akan meningkat dan hasil yang terpampang pada serial monitor
-akan menunjukkan semakin tinggi angkanya.
-
-Percobaan Kedua
-
-
-
-https://user-images.githubusercontent.com/121158751/208878522-223e4dbb-a959-4d0a-9661-d73f4eb80935.mp4
-
-
-
-Pada percobaan di atas menggunakan potensio dan sebuah lampu LED, hasil dari percobaan akan muncul pada serial monitor
-Apabila diputar ke kanan resistansi potensio akan semakin besar dan semakin tinggi daya potensio maka lampu akan semakin redup.
