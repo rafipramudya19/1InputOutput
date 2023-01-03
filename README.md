@@ -29,52 +29,80 @@ B. Mengakses GPIO dan PWM ESP32
 a) GPIO
 1. Buatlah rangkaian seperti pada Gambar di bawah ini.
 
-![Capture](https://user-images.githubusercontent.com/118172386/210171226-b675b914-9494-4b29-8bde-1a4eab5dae88.JPG)
+![GPIO](https://user-images.githubusercontent.com/121251478/210331374-b2cdad6b-fd8e-4c3b-9e9e-efc662318e47.jpeg)
+
 
 2. Buka program example blink, kemudian modifikasi dan buat agar LED dapat melakukan blink dengan interval 100ms, 1 detik, 2 detik dan 3 detik sekali. Setelah itu, buatlah program agar LED dapat blink 1 detik sekali menggunakan timer milis(). Dokumentasikan hasilnya.
 3. Buatlah program seperti pada script GPIO1.ino untuk mengendalikan led menggunakan push button. Kemudian upload program tersebut pada ESP32 dan dokumentasikan hasilnya.
 
-https://user-images.githubusercontent.com/118172386/210171784-6ddea236-f50f-4674-bf9f-d0429c2e9351.mp4
+
+
+https://user-images.githubusercontent.com/121251478/210331397-cc05c3aa-043a-44c6-84d4-7b6368e8eeb6.mp4
+
+
 
 4. Tambahkan 1 LED dan 1 push button pada rangkaian, kemudian kembangkan program agar ketika push button ke-2 ditekan, LED akan melakukan blink setiap 500 ms sekali. Kemudian dokumentasikan hasilnya.
 
-https://user-images.githubusercontent.com/118172386/210172246-ca2301a3-39a1-4bc1-a2c7-60396f990e8c.mp4
+
+
+https://user-images.githubusercontent.com/121251478/210331424-20ecace5-2672-4d3c-9c49-abb06ac437ea.mp4
+
+
 
 5. Tambahkan 3 LED dan 1 push button pada rangkaian, kemudian kembangkan program agar ketuka push button ke-3 ditekan, LED akan menyala menjadi running led (menyala bergantian dari kiri ke kanan). Setelah itu dokumentasikan hasilnya.
 
-https://user-images.githubusercontent.com/118172386/210172259-cad10e4b-bb9e-40e2-8eff-e0dacccc24dd.mp4
+
+
+https://user-images.githubusercontent.com/121251478/210331472-19a68e79-4ec7-4edf-977f-0efa4dae4537.mp4
+
+
 
 b) PWM
 
 1. Buatlah rangkaian seperti pada gambar di bawah ini.
 
-![Capture](https://user-images.githubusercontent.com/118172386/210172286-de54c8f4-7a38-4fc0-a6a6-682a34644060.JPG)
+![PWM](https://user-images.githubusercontent.com/121251478/210331511-b677e00c-f74f-4a9b-b61b-a5f86c7402c7.jpeg)
+
 
 2. Buatlah script program seperti berikut.
 3. Upload program tersebut, kemudian amati dan analisis apa yang terjadi serta dokumentasikan hasilnya
 
-https://user-images.githubusercontent.com/118172386/210172327-d4263dbf-5d91-453e-8382-f7f40eb24e50.mp4
+
+
+https://user-images.githubusercontent.com/121251478/210331556-96e0c97b-0abc-4ece-b8a3-c7c120bc2db2.mp4
+
+
 
 4. Buatlah program lanjutan seperti pada script berikut ini.
 5. Upload program tersebut, kemudian amati dan analisis apa yang terjadi serta dokumentasikan hasilnya.
 
-https://user-images.githubusercontent.com/118172386/210172352-3ef1fd2f-fc34-4bcb-b895-902764eb0b27.mp4
+
+
+https://user-images.githubusercontent.com/121251478/210331588-bb6a7a25-11b5-4738-a7e3-cad490295c5a.mp4
+
+
 
 C. ADC dan DAC
 1. Buatlah rangkaian seperti pada gambar di bawah ini.
 
-![Capture1](https://user-images.githubusercontent.com/118172386/210172373-b737083a-5ebb-402a-878a-245a3b3dfc52.JPG)
+![ADC_DAC](https://user-images.githubusercontent.com/121251478/210331615-4fbbdd04-0c6c-4c38-9e2b-f9836f7e85c4.jpeg)
+
 
 2. Buatlah program seperti pada script berikut ini
 3. Putar potensiometer secara perlahan agar mendapatkan nilai 0 hingga 4095 pada tampilan serial monitor. Analisis apa yang terjadi dan dokumentasikan hasilnya.
 
 
-https://user-images.githubusercontent.com/118172386/210172404-85a9d5fd-c17c-4f91-8297-3c26153d8067.mp4
+
+https://user-images.githubusercontent.com/121251478/210331649-fda9f117-1137-40c7-aa22-891ef767dd01.mp4
+
+
 
 4. Buatlah program seperti pada script berikut ini.Tambahkan LED pada GPIO5.
 5. Upload program, kemudian putar potensiometer dari nilai terendah hingga nilai tertinggi. Amati yang terjadi, analisis dan dokumentasikan hasilnya.
 
 
-https://user-images.githubusercontent.com/118172386/210172437-70ff65f5-ca19-4424-a879-51388817cd34.mp4
+
+
+https://user-images.githubusercontent.com/121251478/210331673-525a4614-fe7f-45ac-a4e3-6a4589dedee7.mp4
 
 
